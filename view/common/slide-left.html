@@ -1,0 +1,23 @@
+<div class="wp-left js-slide-left">
+  <div class="wp-left-cate">
+    <div class="wp-left-cate-top">站内分类<?php if(IS_ADMIN): ?><a class="wp-left-cate-adm" href="category.php">[编辑]</a><?php endif; ?></div>
+    <div class="wp-left-cate-lnk">
+      <?php foreach ($category as $k => $v): if (!$v['cover']): ?>
+        <a href="./?cid=<?=$v['id']?>"><?=$v['name']?></a>
+      <?php endif; endforeach; ?>
+<!-- 	  <div class="wp-left-form">
+	<p>java教程</p>
+	<p>java教程</p>
+	<p>java教程</p>
+	<p>java教程</p>
+	<p>java教程</p>
+	<p>java教程</p>
+	<p>java教程</p>
+	<p>java教程</p>
+	<p>java教程</p>
+	<p>java教程</p>
+	<p>java教程</p>
+	 </div> -->
+    </div>
+  </div>
+</div>
